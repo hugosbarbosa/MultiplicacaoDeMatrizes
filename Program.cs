@@ -10,6 +10,7 @@ namespace MultiplicacaoDeMatrizes
     {
         static void Main(string[] args)
         {
+            // Estudos
         }
     }
 }
