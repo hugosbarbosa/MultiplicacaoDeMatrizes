@@ -23,7 +23,7 @@ namespace MultiplicacaoDeMatrizes
             {
                 for (int coluna = 0; coluna < 3; coluna++)
                 {
-                    Console.Write("#1. Posição [" + linha + "][" + coluna + "]: ");
+                    Console.Write("#1 > Posição [" + linha + "][" + coluna + "]: ");
                     matriz1[linha, coluna] = int.Parse(Console.ReadLine());
                 }
 
@@ -36,7 +36,7 @@ namespace MultiplicacaoDeMatrizes
             {
                 for (int coluna = 0; coluna < 2; coluna++)
                 {
-                    Console.Write("#1. Posição [" + linha + "][" + coluna + "]: ");
+                    Console.Write("#2 > Posição [" + linha + "][" + coluna + "]: ");
                     matriz2[linha, coluna] = int.Parse(Console.ReadLine());
                 }
 
@@ -51,7 +51,11 @@ namespace MultiplicacaoDeMatrizes
 
             result[0, 1] = (matriz1[0, 0] * matriz2[0, 1]) + (matriz1[0, 1] * matriz2[1, 1] + (matriz1[0, 2] * matriz2[2, 1]));
 
+            result[1 , 1] = (matriz1[1, 0] * matriz2[0, 1]) + (matriz1[1, 1] * matriz2[1, 1] + (matriz1[1, 2] * matriz2[2, 1]));
 
+            Console.WriteLine("[" + result[0, 0] + "][" + result[0, 1] + "]");
+            Console.WriteLine("[" + result[1, 0] + "][" + result[1, 1] + "]");
+            Console.ReadKey();
         }
     }
 }
